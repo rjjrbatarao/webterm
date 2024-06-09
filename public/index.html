@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./xterm.css" />
+    <script src="./xterm.js"></script>
+    <script src="./xterm-addon-fit.js"></script>
+    <style>
+      .resizable {
+        resize: both;
+        overflow: auto;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="resizable"
+      id="terminal"
+      ondrop="dropHandler(event);"
+      ondragover="dragOverHandler(event);"
+    ></div>
+  </body>
+  <script src="./frontend.js"></script>
+</html>
