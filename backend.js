@@ -2,16 +2,14 @@ require("dotenv").config();
 
 const https = require("https");
 const fs = require("fs");
-const express = require("express");
-const path = require("path");
-const chalk = require("chalk");
-const ws = require("express-ws");
 const os = require("os");
 const pty = require("node-pty");
+const path = require("path");
+const chalk = require("chalk");
+const express = require("express");
+const ws = require("express-ws");
 const auth = require("basic-auth");
 const multer = require("multer");
-
-console.log("Socket is up and running...");
 
 const app_port = process.env.APP_PORT || 8443;
 const app_basicauth = process.env.ENABLE_AUTH || 1;
@@ -103,10 +101,10 @@ app.get("/dl/:file", (req, res) => {
         .send(
           '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="2; url=/"></head>FILE NOT FOUND</html>'
         );
-    } else {
-      console.log("file exist");
-      res.download(`${current_directory}\\${req.params.file}`);
+      return;
     }
+    console.log("file exist");
+    res.download(`${current_directory}\\${req.params.file}`);
   });
 });
 
@@ -157,12 +155,11 @@ app.ws("/", function (ws, req) {
   ws.on("message", function (command) {
     if (command.charAt(0) == "\x04") {
       let resize = JSON.parse(command.substring(1));
-      //console.log(resize);
       ptyProcess.resize(resize.Width, resize.Height);
-    } else {
-      let processedCommand = commandProcessor(command);
-      ptyProcess.write(processedCommand);
+      return;
     }
+    let processedCommand = commandProcessor(command);
+    ptyProcess.write(processedCommand);
   });
 
   ptyProcess.on("data", function (rawOutput) {
