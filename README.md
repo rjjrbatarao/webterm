@@ -18,7 +18,8 @@ To get the backend running use the following steps:
 Login using webterm | webterm, to logout append to site /lg and enter
 There is not much to do regarding the frontend except to open up `index.html` in the browser.
 
-![2024-06-0910-52-14-ezgif com-video-to-gif-converter](https://github.com/rjjrbatarao/webterm/assets/50077340/4289a921-56a6-43f5-8bd2-ff0764fd05e9)
+
+https://github.com/rjjrbatarao/webterm/assets/50077340/4e8ab862-3380-414a-8018-aa521bb2774c
 
 
 ## Features
