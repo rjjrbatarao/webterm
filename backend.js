@@ -20,9 +20,9 @@ const app_password = process.env.AUTH_PASSWORD || "webterm";
 const app_working_directory =
   process.env.APP_WORKING_DIRECTORY || process.env.HOME;
 const app_cert_key =
-  process.env.CUSTOM_KEY || path.join(__dirname, "/certs/key-rsa.pem");
+  process.env.SSL_KEY || path.join(__dirname, "/certs/key-rsa.pem");
 const app_cert_cert =
-  process.env.CUSTOM_CERT || path.join(__dirname, "/certs/cert.pem");
+  process.env.SSL_CERT || path.join(__dirname, "/certs/cert.pem");
 
 const shell = os.platform() === "win32" ? "powershell.exe" : "bash";
 const ptyProcess = pty.spawn(shell, [], {

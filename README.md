@@ -15,7 +15,7 @@ To get the backend running use the following steps:
 - Run `node backend.js` to start the WebSocket the frontend will be connecting to.
 - Run `npm run build-windows` to start packaging webterm into windows executable binaries.
 
-Login using webterm | webterm, to logout append to site /logout and enter
+Login using webterm | webterm, to logout append to site /lg and enter
 There is not much to do regarding the frontend except to open up `index.html` in the browser.
 
 ## Features
@@ -33,9 +33,9 @@ There is not much to do regarding the frontend except to open up `index.html` in
 - banner startup
 - assets are packaged in to the file executable
 
-You can download files on current directory by appending /dl/<filename>
+You can download files on current directory by appending `/dl/<filename>`
 You can also upload to specific directory by navigating to the directory and
-dragging the files to the terminal
+dragging the files to the terminal.
 
 ## Generate custom certificates
 
@@ -53,6 +53,8 @@ ENABLE_AUTH = 1
 AUTH_USERNAME = webterm
 AUTH_PASSWORD = webterm
 APP_WORKING_DIRECTORY = /
+SSL_KEY = /cert.key
+SSL_CERT = /cert.crt
 ```
 
 ## Pkg Targets
