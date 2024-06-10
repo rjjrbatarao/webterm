@@ -54,7 +54,10 @@ const outputProcessor = function (output) {
   /**
    * !matcher for current directory
    */
-  let dir = output.match(new RegExp("PS " + "(.*)" + ">"));
+  let dir =
+    shell == "bash"
+      ? output.match(new RegExp(":" + "(.*)" + "#"))
+      : output.match(new RegExp("PS " + "(.*)" + ">"));
   if (dir) {
     current_directory = dir[1].trim();
   }
