@@ -11,7 +11,7 @@ There are two parts to this, the frontend and backend, just like a typical web a
 To get the backend running use the following steps:
 
 - `cd` into the directory.
-- Run `npm install` to pull in dependencies.
+- Run `npm install` to pull in dependencies, NOTE: in linux install requirements `sudo apt-get update && sudo apt-get install build-essential`.
 - Run `node backend.js` to start the WebSocket the frontend will be connecting to.
 - Run `npm run build-windows` to start packaging webterm into windows executable binaries.
 
