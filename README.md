@@ -50,7 +50,7 @@ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
 openssl rsa -in key.pem -out key-rsa.pem
 ```
 
-## ENV's
+## ENV config `.env`
 
 ```
 APP_PORT = 8443
