@@ -76,6 +76,7 @@ arch x64, arm64, (armv6, armv7)
 Persistent banner on terminal - has issue on jumping cursor,
 multiple accounts and permissions
 zero trust, command filters via regex
+switch tls on or off
 ```
 
 ## References
