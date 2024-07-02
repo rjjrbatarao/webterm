@@ -73,7 +73,9 @@ arch x64, arm64, (armv6, armv7)
 ## Todo
 
 ```
-Persistent banner on terminal - has issue on jumping cursor
+Persistent banner on terminal - has issue on jumping cursor,
+multiple accounts and permissions
+zero trust, command filters via regex
 ```
 
 ## References
