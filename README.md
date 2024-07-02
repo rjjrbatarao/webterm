@@ -17,7 +17,7 @@ To get the backend running use the following steps:
 - Run `npm run build-windows` to start packaging webterm into windows executable binaries.
 
 Login using webterm | webterm, to logout append to site /lg and enter
-There is not much to do regarding the frontend except to open up `index.html` in the browser.
+There is not much to do regarding the frontend except to open up `localhost:8443` in the browser, for configuration check the `.env` file.
 
 
 https://github.com/rjjrbatarao/webterm/assets/50077340/4e8ab862-3380-414a-8018-aa521bb2774c
