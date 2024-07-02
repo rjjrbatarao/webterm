@@ -1,5 +1,6 @@
 # Interactive web-based terminal aka Webterm
-
+- Minimalist secure terminal on the web, customizible with any functionalities you need like banners, commands filters etc.
+  
 ## Requirements:
 
 - NodeJS >= v16 and NPM
