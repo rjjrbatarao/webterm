@@ -85,5 +85,5 @@ path bugs in linux binaries
 [original source](https://www.eddymens.com/blog/creating-a-browser-based-interactive-terminal-using-xtermjs-and-nodejs)
 
 ## Related projects
-[wave](https://github.com/wavetermdev/waveterm)
-[warp](https://github.com/warpdotdev/Warp)
+[wave](https://github.com/wavetermdev/waveterm)<br>
+[warp](https://github.com/warpdotdev/Warp)<br>
