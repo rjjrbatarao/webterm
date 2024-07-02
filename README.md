@@ -77,6 +77,7 @@ Persistent banner on terminal - has issue on jumping cursor,
 multiple accounts and permissions
 zero trust, command filters via regex
 switch tls on or off
+path bugs in linux binaries
 ```
 
 ## References
